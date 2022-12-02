@@ -1,0 +1,92 @@
+body {
+  font-family: "Lato", sans-serif;
+  margin: 50px;
+}
+.weather-app {
+  border: 1px solid #d9dad7;
+  padding: 20px;
+  max-width: 500px;
+}
+button {
+  color: #97cba9;
+  margin-bottom: 15px;
+  border-color: white;
+  font-size: 15px;
+  position: relative;
+  top: 30px;
+  background: #ffffff;
+  box-shadow: #ffffff;
+  transition: 250ms ease-in-out;
+}
+button:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background: #97cba9;
+}
+.date-time {
+  font-size: 15px;
+  text-align: right;
+  position: relative;
+  top: -10px;
+  color: #97cba9;
+}
+h1 {
+  color: #668ba4;
+  font-weight: 700;
+  font-size: 50px;
+  padding: 25px 0px 0px;
+}
+h1:hover {
+  color: #dde0ab;
+  cursor: pointer;
+}
+h2 {
+  color: #97cba9;
+  font-size: 10px;
+  max-width: 300px;
+}
+h3 {
+  color: #668ba4;
+  font-size: 70px;
+  padding: 25px 0px;
+}
+h3:hover {
+  color: #dde0ab;
+  cursor: pointer;
+}
+.c-f {
+  font-size: 20px;
+}
+.next-five-days {
+  text-align: center;
+  font-size: 15px;
+  color: #97cba9;
+}
+.future-forcast {
+  color: #668ba4;
+  font-size: 25px;
+  box-shadow: 10px 5px 5px #d9dad7;
+  text-align: center;
+  padding: 18px;
+  border-color: #dde0ab;
+  border-style: solid;
+  border-radius: 45px;
+  max-width: 600px;
+  max-height: 100px;
+  display: block;
+  margin: 0 auto;
+}
+.days {
+  font-size: 10px;
+  opacity: 0.7;
+  color: #97cba9;
+  position: relative;
+  top: -20px;
+}
+.weather-warnings {
+  color: red;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  padding: 30px;
+}
