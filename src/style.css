@@ -90,3 +90,9 @@ h3:hover {
   text-align: center;
   padding: 30px;
 }
+.github-link {
+  font-size: 10px;
+  text-align: center;
+  color: #d9dad7;
+  margin-top: 20px;
+}
