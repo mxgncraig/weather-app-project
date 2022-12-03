@@ -49,18 +49,3 @@ function showTemperature(response) {
   humidityElement.innerHTML = `Humidity: ${humidity}%`;
   windElement.innerHTML = `Wind: ${wind}km/ph`;
 }
-function currentPosition(position) {
-  let myLatitude = position.coords.latitude;
-  let myLongitude = position.coords.longitude;
-  let apiKey = "9fc3960486ea79b87b5531982e812e30";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${myLatitude}&lon=${myLongitude}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(showTemperature);
-}
-
-function getCurrentPosition(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(currentPosition);
-}
-
-let currentLocationButton = document.querySelector("button");
-currentLocationButton.addEventListener("click", currentPosition);

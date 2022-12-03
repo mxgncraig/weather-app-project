@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link href="src/style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,30 +28,36 @@
     <div class="container">
       <div class="weather-app">
       <div class="current-location">
-        <p>You are currently in:</p>
+        <button>Your current location...</button>
       </div>
       <div class="date-time">
         <p>Current date and time</p>
       </div>
       <div class="search-engine">
-        <form>
-          <input type="search" placeholder="Search for a new location" />
-          <input type="submit" />
-        </form>
+        <form id="form">
+              <div class="col-9">
+                <input
+                  class="form-control"
+                  input type="text"
+                  id="city"
+                  placeholder="Search for a new city..."
+                />
+              </div>
+            </form>
       </div>
       <h1>Coolangatta</h1>
       <h2>
         <div class="row">
-          <div class="col">Humidity:</div>
-          <div class="col">Wind:</div>
-          <div class="col">Rainfall:</div>
+          <div class="col" id="humidity">Humidity:</div>
+          <div class="col" id="wind">Wind:</div>
+          <div class="col" id="rain">Rainfall:</div>
         </div>
       </h2>
       <h3>
         <span class="current-icon"
           ><i class="fa-solid fa-cloud-sun-rain"></i
         ></span>
-        <span class="current-temperature"> 23°</span>
+        <span class="current-temperature">19°C</span>
       </h3>
         <span class="next-five-days"><p>The next 5 days...</p></span>
         <div class="future-forcast">
